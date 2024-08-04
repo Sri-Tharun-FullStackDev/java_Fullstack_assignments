@@ -1,0 +1,46 @@
+img
+{width: 100px; height: 150px;margin-top: 30px;}
+
+.para1
+{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+
+.heading
+{
+    display:flex;
+    border-style: solid;
+    border-bottom: 0;
+    border-color: red;
+}
+
+.seperator
+{
+    font-weight: bold;
+    background-color: gray;
+}
+
+
+label{
+    font-weight: bold;
+}
+
+.box{
+    border-style: groove;
+    text-align: justify;
+    padding: 15px;
+}
+
+body
+{
+   font-family:sans-serif;
+}
+
+
+
+   
+
+

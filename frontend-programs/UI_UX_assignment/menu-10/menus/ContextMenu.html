@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Context Menu</title>
+    <style>
+        .context-menu {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .context-menu a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .context-menu a:hover {background-color: #f1f1f1}
+    </style>
+</head>
+<body>
+    <div id="target" style="width: 200px; height: 200px; background-color: #ddd; margin: 50px;">
+        Right-click on me
+    </div>
+
+    <div id="contextMenu" class="context-menu">
+        <a href="#">Cut</a>
+        <a href="#">Copy</a>
+        <a href="#">Paste</a>
+        <a href="#">Delete</a>
+    </div>
+
+    <script>
+        const target = document.getElementById('target');
+        const contextMenu = document.getElementById('contextMenu');
+
+        target.addEventListener('contextmenu', (event) => {
+            event.preventDefault();
+            contextMenu.style.display = 'block';
+            contextMenu.style.left = `${event.pageX}px`;
+            contextMenu.style.top = `${event.pageY}px`;
+        });
+
+        window.addEventListener('click', () => {
+            contextMenu.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

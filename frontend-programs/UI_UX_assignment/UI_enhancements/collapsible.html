@@ -1,0 +1,16 @@
+<button class="btn-collapse" onclick="toggleCollapse()">Toggle Collapse</button>
+<div id="collapseSection" class="collapse">
+  <p>This is a collapsible section.</p>
+</div>
+
+<script>
+function toggleCollapse() {
+  var element = document.getElementById("collapseSection");
+  if (element.classList.contains("show")) {
+    element.classList.remove("show");
+  } else {
+    element.classList.add("show");
+  }
+}
+</script>
+<link rel="stylesheet" href="collapsible.css">

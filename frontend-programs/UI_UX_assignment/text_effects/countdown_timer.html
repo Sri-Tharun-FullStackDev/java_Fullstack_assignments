@@ -1,0 +1,49 @@
+<div id="countdown">
+    <span id="days"></span> days
+    <span id="hours"></span> hours
+    <span id="minutes"></span> minutes
+    <span id="seconds"></span> seconds
+  </div>
+  
+  <script>
+  function startCountdown(endDate) {
+    const countdown = document.getElementById('countdown');
+    const daysSpan = countdown.querySelector('#days');
+    const hoursSpan = countdown.querySelector('#hours');
+    const minutesSpan = countdown.querySelector('#minutes');
+    const secondsSpan = countdown.querySelector('#seconds');
+  
+    function updateCountdown() {
+      const now = new Date();
+      const timeRemaining = endDate - now;
+  
+      const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+  
+      daysSpan.textContent = days;
+      hoursSpan.textContent = hours;
+      minutesSpan.textContent = minutes;
+      secondsSpan.textContent = seconds;
+    }
+  
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  }
+  
+  // Set your target end date here
+  const endDate = new Date('2024-12-31T23:59:59');
+  startCountdown(endDate);
+  </script>
+  
+  <style>
+  #countdown {
+    font-family: monospace;
+    font-size: 1.5rem;
+  }
+  #countdown span {
+    font-weight: bold;
+  }
+  </style>
+  

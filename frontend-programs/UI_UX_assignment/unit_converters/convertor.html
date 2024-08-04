@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converters</title>
+  <style>
+    .converter {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+    .converter h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .converter input, .converter select {
+      width: 92%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="converter" id="weight-converter">
+    <h2>Weight Converter</h2>
+    <label for="weight-input">Enter weight:</label>
+    <input type="number" id="weight-input" placeholder="Enter weight">
+    <select id="weight-unit">
+      <option value="kg">Kilograms</option>
+      <option value="lb">Pounds</option>
+    </select>
+    <div id="weight-result"></div>
+  </div>
+
+  <div class="converter" id="temperature-converter">
+    <h2>Temperature Converter</h2>
+    <label for="temperature-input">Enter temperature:</label>
+    <input type="number" id="temperature-input" placeholder="Enter temperature">
+    <select id="temperature-unit">
+      <option value="c">Celsius</option>
+      <option value="f">Fahrenheit</option>
+    </select>
+    <div id="temperature-result"></div>
+  </div>
+
+  <div class="converter" id="length-converter">
+    <h2>Length Converter</h2>
+    <label for="length-input">Enter length:</label>
+    <input type="number" id="length-input" placeholder="Enter length">
+    <select id="length-unit">
+      <option value="m">Meters</option>
+      <option value="ft">Feet</option>
+    </select>
+    <div id="length-result"></div>
+  </div>
+
+  <div class="converter" id="speed-converter">
+    <h2>Speed Converter</h2>
+    <label for="speed-input">Enter speed:</label>
+    <input type="number" id="speed-input" placeholder="Enter speed">
+    <select id="speed-unit">
+      <option value="kmh">Kilometers per hour</option>
+      <option value="mph">Miles per hour</option>
+    </select>
+    <div id="speed-result"></div>
+  </div>
+
+  <script>
+    // Weight Converter
+    document.getElementById('weight-input').addEventListener('input', function() {
+      const value = parseFloat(this.value);
+      const unit = document.getElementById('weight-unit').value;
+      const result = document.getElementById('weight-result');
+      
+      if (unit === 'kg') {
+        result.textContent = `${value} kg = ${value * 2.20462} lb`;
+      } else {
+        result.textContent = `${value} lb = ${value / 2.20462} kg`;
+      }
+    });
+    
+    document.getElementById('weight-unit').addEventListener('change', function() {
+      document.getElementById('weight-input').dispatchEvent(new Event('input'));
+    });
+
+    // Temperature Converter
+    document.getElementById('temperature-input').addEventListener('input', function() {
+      const value = parseFloat(this.value);
+      const unit = document.getElementById('temperature-unit').value;
+      const result = document.getElementById('temperature-result');
+      
+      if (unit === 'c') {
+        result.textContent = `${value} °C = ${(value * 9/5) + 32} °F`;
+      } else {
+        result.textContent = `${value} °F = ${(value - 32) * 5/9} °C`;
+      }
+    });
+    
+    document.getElementById('temperature-unit').addEventListener('change', function() {
+      document.getElementById('temperature-input').dispatchEvent(new Event('input'));
+    });
+
+    // Length Converter
+    document.getElementById('length-input').addEventListener('input', function() {
+      const value = parseFloat(this.value);
+      const unit = document.getElementById('length-unit').value;
+      const result = document.getElementById('length-result');
+      
+      if (unit === 'm') {
+        result.textContent = `${value} meters = ${value * 3.28084} feet`;
+      } else {
+        result.textContent = `${value} feet = ${value / 3.28084} meters`;
+      }
+    });
+    
+    document.getElementById('length-unit').addEventListener('change', function() {
+      document.getElementById('length-input').dispatchEvent(new Event('input'));
+    });
+
+    // Speed Converter
+    document.getElementById('speed-input').addEventListener('input', function() {
+      const value = parseFloat(this.value);
+      const unit = document.getElementById('speed-unit').value;
+      const result = document.getElementById('speed-result');
+      
+      if (unit === 'kmh') {
+        result.textContent = `${value} km/h = ${value / 1.60934} mph`;
+      } else {
+        result.textContent = `${value} mph = ${value * 1.60934} km/h`;
+      }
+    });
+    
+    document.getElementById('speed-unit').addEventListener('change', function() {
+      document.getElementById('speed-input').dispatchEvent(new Event('input'));
+    });
+  </script>
+
+</body>
+</html>

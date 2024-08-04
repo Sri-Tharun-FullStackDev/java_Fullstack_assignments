@@ -1,0 +1,84 @@
+/* Hide default checkboxes and radio buttons */
+.custom-checkbox input,
+.custom-radio input {
+  display: inline-flexbox;
+}
+
+/* Custom checkbox style */
+.custom-checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.custom-checkbox input:checked + .checkbox-checkmark {
+  background-color: #007bff;
+}
+
+.checkbox-checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input:checked + .checkbox-checkmark::after {
+  display: block;
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* Custom radio button style */
+.custom-radio {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.custom-radio input:checked + .radio-checkmark {
+  background-color: #007bff;
+}
+
+.radio-checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-radio input:checked + .radio-checkmark::after {
+  display: block;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: white;
+  top: 5px;
+  left: 5px;
+}

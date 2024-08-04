@@ -1,0 +1,40 @@
+
+<link rel="stylesheet" href="table_filters_and_sorting.css">
+
+<div class="table-container">
+    <label for="tableFilter">Filter by category:</label>
+    <select id="tableFilter">
+      <option value="">All</option>
+      <option value="fruit">Fruit</option>
+      <option value="vegetable">Vegetable</option>
+    </select>
+  
+    <table id="itemTable">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Category <button id="sortButton">Sort</button></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-category="fruit">
+          <td>Apple</td>
+          <td>Fruit</td>
+        </tr>
+        <tr data-category="vegetable">
+          <td>Carrot</td>
+          <td>Vegetable</td>
+        </tr>
+        <tr data-category="fruit">
+          <td>Banana</td>
+          <td>Fruit</td>
+        </tr>
+        <tr data-category="vegetable">
+          <td>Broccoli</td>
+          <td>Vegetable</td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="table_filters_and_sorting.js"></script>
+  </div>
+  

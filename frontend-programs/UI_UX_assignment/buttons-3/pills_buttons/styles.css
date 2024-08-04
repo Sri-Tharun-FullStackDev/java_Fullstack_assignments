@@ -1,0 +1,30 @@
+.pill-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .pill-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 50px; /* Pill shape */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    outline: none; /* Remove default outline */
+  }
+  
+  .pill-button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+  }
+  
+  .pill-button:active {
+    transform: scale(0.95); /* Button scale effect on click */
+  }
+  
+  .pill-button.disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  

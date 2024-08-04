@@ -1,0 +1,76 @@
+/* styles.css */
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #ffffff;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    margin-bottom: 1rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+/* Main Content Styling */
+main {
+    padding: 1rem 0;
+}
+
+main h2 {
+    margin-bottom: 1rem;
+}
+
+main .row {
+    margin-bottom: 1rem;
+}
+
+.sidebar {
+    background-color: #e9ecef;
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #ffffff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Button Styling (Optional) */
+.btn-custom {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: #ffffff;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3; /* Darker shade of primary color */
+}

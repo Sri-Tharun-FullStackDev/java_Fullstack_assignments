@@ -1,0 +1,23 @@
+.list-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  #itemList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #itemList .item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #itemList .item:last-child {
+    border-bottom: none;
+  }
+  

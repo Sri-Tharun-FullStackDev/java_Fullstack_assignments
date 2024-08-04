@@ -1,0 +1,75 @@
+/* styles.css */
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* About Section */
+.about {
+    padding: 3rem 1rem;
+    background-color: #f4f4f4;
+}
+
+.about h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.about p {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    width: 30%;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.team-member h4 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    color: #007bff;
+}
+
+.team-member p {
+    margin: 0;
+    color: #666;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .team-member {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}

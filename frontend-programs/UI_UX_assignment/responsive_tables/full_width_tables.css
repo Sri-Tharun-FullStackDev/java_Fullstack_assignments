@@ -1,0 +1,16 @@
+.full-width-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .full-width-table th, .full-width-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .full-width-table thead {
+    background-color: #f4f4f4;
+  }
+  

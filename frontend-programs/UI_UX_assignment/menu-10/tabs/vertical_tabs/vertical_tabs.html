@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Tabs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="vertical-tabs">
+        <div class="tab-header">
+            <button class="tab-link" onclick="openTab(event, 'vtab1')">Tab 1</button>
+            <button class="tab-link" onclick="openTab(event, 'vtab2')">Tab 2</button>
+            <button class="tab-link" onclick="openTab(event, 'vtab3')">Tab 3</button>
+        </div>
+        <div class="tab-content-container">
+            <div id="vtab1" class="tab-content">
+                <h2>Content for Tab 1</h2>
+                <p>This is the content of the first tab.</p>
+            </div>
+            <div id="vtab2" class="tab-content">
+                <h2>Content for Tab 2</h2>
+                <p>This is the content of the second tab.</p>
+            </div>
+            <div id="vtab3" class="tab-content">
+                <h2>Content for Tab 3</h2>
+                <p>This is the content of the third tab.</p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

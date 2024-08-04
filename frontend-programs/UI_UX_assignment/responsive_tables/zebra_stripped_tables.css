@@ -1,0 +1,24 @@
+.zebra-striped-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .zebra-striped-table th, .zebra-striped-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .zebra-striped-table thead {
+    background-color: #f4f4f4;
+  }
+  
+  .zebra-striped-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  .zebra-striped-table tbody tr:nth-child(even) {
+    background-color: #fff;
+  }
+  

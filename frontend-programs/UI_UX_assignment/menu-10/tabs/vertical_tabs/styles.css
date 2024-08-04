@@ -1,0 +1,39 @@
+.vertical-tabs {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tab-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-link {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-right: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 150px;
+    text-align: left;
+}
+
+.tab-link:hover {
+    background-color: #ccc;
+}
+
+.tab-content-container {
+    flex: 1;
+    border: 1px solid #ccc;
+}
+
+.tab-content {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.tab-content.active {
+    display: block;
+}

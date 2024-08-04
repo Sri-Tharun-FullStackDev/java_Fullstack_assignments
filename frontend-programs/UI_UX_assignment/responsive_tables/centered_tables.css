@@ -1,0 +1,16 @@
+.centered-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  .centered-table th, .centered-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .centered-table thead {
+    background-color: #f4f4f4;
+  }
+  

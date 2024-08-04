@@ -1,0 +1,17 @@
+
+<link rel="stylesheet" href="form_validation.css">
+
+<form class="validation-form" id="validationForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Only letters and spaces are allowed" />
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required />
+  
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="99" required />
+  
+    <button type="submit">Submit</button>
+    <script src="form_validation.js"></script>
+  </form>
+  

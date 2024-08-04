@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form class="checkout-form">
+        <h2>Checkout</h2>
+        <fieldset>
+          <legend>Shipping Address</legend>
+          <label for="shippingName">Name:</label>
+          <input type="text" id="shippingName" name="shippingName" required>
+      
+          <label for="shippingAddress">Address:</label>
+          <input type="text" id="shippingAddress" name="shippingAddress" required>
+      
+          <label for="shippingCity">City:</label>
+          <input type="text" id="shippingCity" name="shippingCity" required>
+      
+          <label for="shippingState">State:</label>
+          <input type="text" id="shippingState" name="shippingState" required>
+      
+          <label for="shippingZip">ZIP Code:</label>
+          <input type="text" id="shippingZip" name="shippingZip" required>
+        </fieldset>
+      
+        <fieldset>
+          <legend>Payment Details</legend>
+          <label for="cardNumber">Card Number:</label>
+          <input type="text" id="cardNumber" name="cardNumber" required>
+      
+          <label for="cardExpiry">Expiry Date:</label>
+          <input type="text" id="cardExpiry" name="cardExpiry" required>
+      
+          <label for="cardCvc">CVC:</label>
+          <input type="text" id="cardCvc" name="cardCvc" required>
+        </fieldset>
+      
+        <button type="submit">Place Order</button>
+      </form>
+      
+</body>
+</html>

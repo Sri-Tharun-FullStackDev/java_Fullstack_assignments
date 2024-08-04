@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading Dropdown Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li class="menu-item">
+                <button class="menu-button">Home</button>
+            </li>
+            <li class="menu-item">
+                <button class="menu-button">About</button>
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <button class="menu-button">Our Team</button>
+                        <ul class="dropdown">
+                            <li class="dropdown-item">Team Member 1</li>
+                            <li class="dropdown-item">Team Member 2</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-item">Our Story</li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <button class="menu-button">Services</button>
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <button class="menu-button">Consulting</button>
+                        <ul class="dropdown">
+                            <li class="dropdown-item">Strategy</li>
+                            <li class="dropdown-item">Operations</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-item">Development</li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <button class="menu-button">Contact</button>
+            </li>
+        </ul>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>

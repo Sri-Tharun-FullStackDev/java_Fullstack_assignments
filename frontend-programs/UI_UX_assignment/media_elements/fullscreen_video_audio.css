@@ -1,0 +1,23 @@
+.video-container {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+  }
+  
+  #fullscreenButton {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

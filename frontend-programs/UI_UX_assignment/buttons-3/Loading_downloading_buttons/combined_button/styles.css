@@ -1,0 +1,37 @@
+.download-button {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .download-button .spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 3px solid #fff;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    transform: translate(-50%, -50%);
+    display: none; /* Hidden by default */
+  }
+  
+  .download-button.loading .button-text {
+    visibility: hidden;
+  }
+  
+  .download-button.loading .spinner {
+    display: block;
+  }
+  

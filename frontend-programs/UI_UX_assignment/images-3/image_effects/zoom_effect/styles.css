@@ -1,0 +1,19 @@
+.zoom-container {
+    overflow: hidden;
+    
+    
+  }
+  
+  .zoom-container img {
+    transition: transform 0.5s ease;
+    height: 720;
+    width: 1280;
+    
+    
+  }
+  
+  .zoom-container:hover img {
+    transform: scale(1.2); /* Adjust scale as needed */
+  }
+
+

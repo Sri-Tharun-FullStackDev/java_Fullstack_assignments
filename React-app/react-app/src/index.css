@@ -1,0 +1,42 @@
+.card
+{
+  margin: 20px;
+  border: 2px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: crimson;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.497);
+ 
+ 
+
+
+}
+.card .card-img
+{
+  width: 300px;
+  height: 200px;
+  border: 2px;
+  border-radius: 50px;
+  border-style:solid ;
+  border-color: black;
+  
+
+}
+.card .card-title
+{
+  font-family: fantasy;
+  margin: 0;
+}
+
+.student{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:2em ;
+  padding: 10px;
+  border: 1px solid hsla(0, 0%, 50%, 0.8);
+}
+
+.student p{
+  font-family: 'Courier New', Courier, monospace;
+}

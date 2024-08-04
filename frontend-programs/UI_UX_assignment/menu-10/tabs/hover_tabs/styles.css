@@ -1,0 +1,40 @@
+.hover-tabs {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.tab-header {
+    display: flex;
+    width: 100%;
+}
+
+.tab-link {
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.tab-link:hover {
+    background-color: #ccc;
+}
+
+.tab-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #f9f9f9;
+    position: absolute;
+    width: 100%;
+    top: 40px; /* Adjust based on header height */
+}
+
+.tab-link:hover + .tab-content {
+    display: block;
+}

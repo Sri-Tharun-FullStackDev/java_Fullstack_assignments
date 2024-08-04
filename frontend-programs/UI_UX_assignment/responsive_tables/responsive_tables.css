@@ -1,0 +1,20 @@
+.responsive-table-container {
+    overflow-x: auto;
+  }
+  
+  .responsive-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Adjust according to your table content */
+  }
+  
+  .responsive-table th, .responsive-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .responsive-table thead {
+    background-color: #f4f4f4;
+  }
+  
